@@ -42,6 +42,7 @@ echo "<script>window.location.href='new-user-testing.php'</script>";
     <meta name="author" content="">
 
     <title>Covid-19 Testing Management System | New User Testing</title>
+  
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,6 +52,8 @@ echo "<script>window.location.href='new-user-testing.php'</script>";
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
 <style type="text/css">
 label{
     font-size:16px;
@@ -77,11 +80,17 @@ error:function (){}
 
 </head>
 
+
+
 <body id="page-top">
+
 
     <!-- Page Wrapper -->
     <div id="wrapper">
 
+<?php 
+include 'navbar.php';
+?>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -89,16 +98,15 @@ error:function (){}
             <!-- Main Content -->
             <div id="content">
 
-
                 <!-- Begin Page Content -->
-                <div class="container-fluid mt-3">
+                <div class="container-fluid mt-5">
 
                     <!-- Page Heading -->
                     <div class="row">
-                        <div class="col-8 offset-1">
-                        <h1 class="h3 mb-4 text-gray-800 bg-gradient-light">Covid19-Testing Registration</h1>
+                        <div class="col-10 mt-5">
+                        <h1 class="h3 mb-4 text-info-800">New User Testing Registration</h1>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 mt-5">
                             <a href="registered-user-testing.php" class="btn btn-info float-end">Registration Check</a>
                         </div>
                     </div>
@@ -106,7 +114,7 @@ error:function (){}
                         <form name="newtesting" method="post">
                         <div class="row">
 
-                        <div class="col-lg-5 ml-5">
+                        <div class="col-lg-6">
 
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
@@ -151,7 +159,7 @@ error:function (){}
 
                         </div>
 
-                        <div class="col-lg-5 mx-5">
+                        <div class="col-lg-6">
 
                            <div class="card shadow mb-4">
                                 <div class="card-header py-3">

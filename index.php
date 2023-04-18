@@ -23,41 +23,9 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-primary bg-light fixed-top" id="mainNav">
-    <div class="container-fluid">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><h4 style="color:cadetblue;"><i class="fa-solid fa-virus-covid"></i> Covid19 Test Management system</h4></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-
-          <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="new-user-testing.php"  style="color:cadetblue;"><i class="fa-solid fa-user"></i> New User</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="patient-search-report.php"  style="color:cadetblue;"><i class="fa-solid fa-file"></i> Report</a>
-          </li>
-           <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="live-test-updates.php" style="color:cadetblue;"><i class="fa-regular fa-clipboard"></i> Testing Records</a>
-          </li>
-           <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="login.php" style="color:cadetblue;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="detection.php" style="color:cadetblue;"><i class="fa-solid fa-circle-check"></i> Check Covid-19</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link js-scroll-trigger" href="detection.php" style="color:cadetblue;"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
-          </li>
-
-
-
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php 
+include 'navbar.php';
+?>
 
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -87,58 +55,6 @@
   </button>
 </div>
 
-  
-
-
-<!-- Button trigger modal -->
-<!-- <span class="float-right">
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#staticBackdrop">→
-</button></span> -->
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
- <h5 class="modal-title" id="staticBackdropLabel">Information</h5>
- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-   <span aria-hidden="true">&times;</span>
- </button>
-</div>
-<div class="modal-body">
-  <div class="loginbox">
-    <form action="login.php" method="post">
-
-    <label for="">Full Name:</label>
-    <input type="text" class="form-control" name="name">
-
-    <label for="">Email:</label>
-    <input type="email" class="form-control" name="email">
-
-    <label for="">Phone Number:</label>
-    <input type="number" class="form-control" name="pnumber">
-
-    <label for="">Date Of Birth: </label>
-    <input type="date" class="form-control" name="datebirth">
-
-    <label class="mt-2 ml-1 pr-1" for="">Gender:</label>
-
-            <input class="form-check-inline" type="radio" name="gender" value="male">Male
-            <input class="form-check-inline" type="radio" name="gender" value="female">Female
-
-    <br>
-    <label for="">Address:</label>
-    <textarea class="form-control" style="min-height:70px; max-height:70px;" name="address" placeholder="Enter Your Address"></textarea>
-
-  </div>
-</div>
-<div class="modal-footer">
- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
- <button type="button" class="btn btn-primary">Submit</button>
-</div>
-</div>
-</div>
-</div> -->
 
 
 <div class="container">

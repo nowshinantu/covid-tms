@@ -52,6 +52,6 @@ form.addEventListener('submit', (event) => {
   if (score >= 4) {
     result.innerText = 'Result: You have some several symptoms of COVID-19. You should get tested for corona.';
   } else {
-    result.innerText = 'Result: You have no symptom of COVID-19. So, Please continue to monitor your health and follow recommended precautions.';
+    result.innerText = 'Result: You have no symptom of COVID-19. So, Please continue to monitor your health and advice to doctor.';
   }
 });

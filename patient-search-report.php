@@ -40,7 +40,9 @@ label{
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-
+<?php 
+include 'navbar.php';
+?>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -49,10 +51,17 @@ label{
             <div id="content">
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid mt-3">
+                <div class="container-fluid" style="margin-top: 80px;">
 
                     <!-- Page Heading -->
-                    <h1 class="h2 mb-4 text-gray-800 bg-gradient-light text-center">Search Report</h1>
+                    <div class="row">
+                        <div class="col-8">
+                        <h1 class="h2 mb-3 text-info-800 bg-light text-center">Search Report</h1>
+                        </div>
+                        <div class="col-3 mx-3">
+                            <a href="index.php" class="btn btn-info float-end">Back</a>
+                        </div>
+                    </div>
 
 <form method="post" action="patient-report.php">
   <div class="row">
@@ -64,7 +73,7 @@ label{
                           
                                 <div class="card-body">
                        <div class="form-group">
-                                             <label>Search By Order Number</label>
+                                             <label class="text-info">Search By Order Number</label>
                                             <input type="text" class="form-control" id="searchdata" name="searchdata" required="true" placeholder="Enter Your Order Number">
                                         </div>
 
@@ -105,6 +114,7 @@ label{
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

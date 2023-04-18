@@ -22,6 +22,10 @@
     <!-- page wrapper -->
     <div id="wrapper">
 
+    <?php
+    include 'navbar.php';
+    ?>
+
       <!-- content wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
 
@@ -29,10 +33,10 @@
       <div id="content">
 
       <!-- begin page content -->
-      <div class="container-fluid mt-3 my-3">
+      <div class="container-fluid" style="margin-top: 80px;">
 
       <!-- page heading -->
-      <h1 class="h2 mb-4 text-gray-800 bg-gradient-light text-center">Check Covid-19 Symptoms</h1>
+      <h1 class="h3 mb-4 text-info-800 bg-light text-center">Check Covid-19 Symptoms</h1>
 
     <div class="container" style="font-size:18px;">
     <form id="covid-form">

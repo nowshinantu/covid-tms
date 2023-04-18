@@ -38,7 +38,9 @@ include_once('includes/config.php');
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-
+<?php
+include 'navbar.php';
+?>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -47,14 +49,22 @@ include_once('includes/config.php');
 
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid mt-3">
+                <div class="container-fluid" style="margin-top: 80px;">
 
                     <!-- Page Heading -->
-                    <h1 class="h2 mb-2 text-gray-800 bg-gradient-light text-center">Statewise Testing Records</h1>
+                    <div class="row">
+                        <div class="col-11">
+                        <h1 class="h3 mb-2 text-info-800 bg-light">Statewise Testing Records</h1>
+                        </div>
+                        <div class="col-1">
+                            <a href="index.php" class="btn btn-info btn-block">Back</a>
+                        </div>
+                    </div>
+                    
     
 
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-4 mt-2">
                         <!-- <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Statewise Testing Records</h6>
                         </div> -->
@@ -118,6 +128,7 @@ while($row=mysqli_fetch_array($query)){
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
