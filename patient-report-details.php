@@ -210,7 +210,7 @@ $num=mysqli_num_rows($ret);
 ?>
 
 <div class="row">
-                         <div class="col-lg-12">
+                         <div class="col-lg-6 offset-3">
 
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
@@ -220,18 +220,18 @@ $num=mysqli_num_rows($ret);
                                 <div class="card-body">
 <?php if($num>0){
 ?>
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered"  width="50%" cellspacing="0">
 <tr>
     
     <th>Status</th>
-    <th>Remark Date</th>
+    <!-- <th>Remark Date</th> -->
     <th>Remark By</th>
 <?php while($result=mysqli_fetch_array($ret)){?>
 </tr>
     <tr>
    
     <td><?php echo $result['Status'];?></td>
-    <td><?php echo $result['PostingTime'];?></td>
+    <!-- <td><?php echo $result['PostingTime'];?></td> -->
     <td><?php echo $result['AdminName'];?></td>
     </tr>
 

@@ -16,7 +16,7 @@ $query="insert into tblphlebotomist(EmpID,FullName,MobileNumber) values('$empid'
 $result =mysqli_query($con, $query);
 if ($result) {
 echo '<script>alert("Doctor created successfully.")</script>';
-  echo "<script>window.location.href='add-phlebotomist.php'</script>";
+  echo "<script>window.location.href='manage-phlebotomist.php'</script>";
 } 
 else {
     echo "<script>alert('Something went wrong. Please try again.');</script>";  
@@ -113,7 +113,7 @@ error:function (){}
 
                         <div class="form-group">
                             <label>Full Name</label>
-                                            <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter your full name..." pattern="[A-Za-z ]+" title="letters only" required="true">
+                                            <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter your full name..." required="true">
                                         </div>
                                         <div class="form-group">
                                              <label>Mobile Number</label>

@@ -51,7 +51,7 @@ move_uploaded_file($_FILES["report"]["tmp_name"],"reportfiles/".$newreportfile);
 $query=mysqli_query($con,"insert into tblreporttracking(OrderNumber,Status,Remark,RemarkBy) values('$orderid','$status','$remark','$rby')");
 $query2=mysqli_query($con,"update tbltestrecord set ReportStatus='$status',FinalReport='$newreportfile',ReportUploadTime='$uploadtime' where OrderNumber='$orderid'");
 echo '<script>alert("Status updated successfully")</script>';
-echo "<script>window.location.href='all-test.php'</script>";
+echo "<script>window.location.href='ontheway-samplecollection-test.php'</script>";
 }
 
 // For other status
@@ -120,7 +120,7 @@ label{
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Test Details# <?php echo intval($_GET['oid']);?></h1>
+                    <h1 class="h3 mb-4 text-gray-800">Test Details for <?php echo intval($_GET['oid']);?></h1>
 <div class="row">
 <?php 
 $testid=intval($_GET['tid']);
@@ -135,11 +135,11 @@ while($row=mysqli_fetch_array($query)){
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-info">Personal Information</h6>
+                                    <h6 class="m-0 font-weight-bold text-info text-center">Personal Information</h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="height:275px;">
    
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="80%" cellspacing="0">
     <tr>
     <th>Full Name</th> 
     <td><?php echo $row['FullName'];?></td>
@@ -196,11 +196,11 @@ while($row=mysqli_fetch_array($query)){
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-info">Test Information</h6>
+                                    <h6 class="m-0 font-weight-bold text-info text-center">Test Information</h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="height:250px;">
 
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
     <tr>
     <th>Order Number</th> 
     <td><?php echo $row['OrderNumber'];?></td>
@@ -235,10 +235,10 @@ while($row=mysqli_fetch_array($query)){
     <td><?php echo $row['AssigntoName'];?>-(<?php echo $row['AssignedtoEmpId'];?>)</td>
     </tr>
 
-    <tr>
+    <!-- <tr>
     <th>Assigned Date</th> 
     <td><?php echo $row['AssignedTime'];?></td>
-    </tr>
+    </tr> -->
 <?php endif;?>
 <?php if($row['FinalReport']!=''):?>
   <tr>
@@ -285,28 +285,28 @@ $num=mysqli_num_rows($ret);
 ?>
 
 <div class="row">
-                         <div class="col-lg-12">
+                         <div class="col-lg-6 offset-3">
 
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-info" align="center">Test  Tracking History</h6>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="height:170px;">
 <?php if($num>0){
 ?>
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
 <tr>
     <!-- <th>Remark</th> -->
     <th>Status</th>
-    <th>Remark Date</th>
+    <!-- <th>Remark Date</th> -->
     <th>Remark By</th>
 <?php while($result=mysqli_fetch_array($ret)){?>
 </tr>
     <tr>
     <!-- <td><?php echo $result['Remark'];?></td>  -->
     <td><?php echo $result['Status'];?></td>
-    <td><?php echo $result['PostingTime'];?></td>
+    <!-- <td><?php echo $result['PostingTime'];?></td> -->
     <td><?php echo $result['AdminName'];?></td>
     </tr>
 

@@ -112,7 +112,7 @@ while($row=mysqli_fetch_array($query)){
 
                         <div class="form-group">
                             <label>Full Name</label>
-                                            <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter your full name..." pattern="[A-Za-z ]+" title="letters only" value="<?php echo $row['FullName'];?>" required="true">
+                                            <input type="text" class="form-control" id="fullname" name="fullname"  placeholder="Enter your full name..."  value="<?php echo $row['FullName'];?>" required="true">
                                         </div>
                                         <div class="form-group">
                                              <label>Mobile Number</label>

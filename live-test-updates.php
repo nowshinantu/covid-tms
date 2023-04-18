@@ -61,7 +61,7 @@ include_once('includes/config.php');
                         <div class="card-body mt-2">
                             <div class="table-responsive">
                                 <form name="assignto" method="post">
-                    <table class="table table-bordered"  width="100%" cellspacing="0">
+                    <table class="table table-bordered"  width="80%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Sno.</th>

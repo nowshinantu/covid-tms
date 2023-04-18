@@ -44,7 +44,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="new-test.php">New</a>
-                        <a class="collapse-item" href="assigned-test.php">Assigned</a>
+                        <a class="collapse-item" href="assigned-test.php">Assigned Under Doctor</a>
                         <a class="collapse-item" href="ontheway-samplecollection-test.php">On the Way for<br /> Sample Collection</a>
                          <a class="collapse-item" href="sample-collected-test.php">Sample Collected</a>
                            <a class="collapse-item" href="samplesent-lab-test.php">Sent to lab</a>

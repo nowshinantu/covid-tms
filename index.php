@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-primary bg-light fixed-top" id="mainNav">
     <div class="container-fluid">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><h3><i class="fa-solid fa-virus-covid"></i> Covid19 Test Management system</h3></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><h4 style="color:cadetblue;"><i class="fa-solid fa-virus-covid"></i> Covid19 Test Management system</h4></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,6 +47,9 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link js-scroll-trigger" href="detection.php" style="color:cadetblue;"><i class="fa-solid fa-circle-check"></i> Check Covid-19</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link js-scroll-trigger" href="detection.php" style="color:cadetblue;"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
           </li>
 
 
