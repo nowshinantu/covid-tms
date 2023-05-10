@@ -23,9 +23,9 @@
           <li class="nav-item active">
             <a class="nav-link js-scroll-trigger" href="detection.php" style="color:cadetblue;"><i class="fa-solid fa-circle-check"></i> Check Covid-19</a>
           </li>
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a class="nav-link js-scroll-trigger" href="doctor.php" style="color:cadetblue;"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
-          </li>
+          </li> -->
           <li class="nav-item active">
             <a class="nav-link js-scroll-trigger" href="login.php" style="color:cadetblue;"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
           </li>

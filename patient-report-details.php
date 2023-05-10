@@ -76,7 +76,7 @@ while($row=mysqli_fetch_array($query)){
                                 </div>
                                 <div class="card-body">
    
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
     <tr>
     <th>Full Name</th> 
     <td><?php echo $row['FullName'];?></td>
@@ -137,7 +137,7 @@ while($row=mysqli_fetch_array($query)){
                                 </div>
                                 <div class="card-body">
 
- <table class="table table-bordered"  width="100%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
     <tr>
     <th>Order Number</th> 
     <td><?php echo $row['OrderNumber'];?></td>
@@ -183,10 +183,10 @@ while($row=mysqli_fetch_array($query)){
     <td><a href="reportfiles/<?php echo $row['FinalReport'];?>" target="_blank">Download</a></td>
     </tr>
 
-    <tr>
+    <!-- <tr>
     <th>Report Delivered Time</th> 
     <td><?php echo $row['ReportUploadTime'];?></td>
-    </tr>
+    </tr> -->
 <?php endif;?>
 
 </table>
@@ -220,7 +220,7 @@ $num=mysqli_num_rows($ret);
                                 <div class="card-body">
 <?php if($num>0){
 ?>
- <table class="table table-bordered"  width="50%" cellspacing="0">
+ <table class="table table-bordered table-sm"  width="50%" cellspacing="0">
 <tr>
     
     <th>Status</th>

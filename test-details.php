@@ -198,7 +198,7 @@ while($row=mysqli_fetch_array($query)){
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-info text-center">Test Information</h6>
                                 </div>
-                                <div class="card-body" style="height:250px;">
+                                <div class="card-body" style="height: 275px;">
 
  <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
     <tr>
@@ -290,9 +290,9 @@ $num=mysqli_num_rows($ret);
                             <!-- Basic Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-info" align="center">Test  Tracking History</h6>
+                                    <h6 class="m-0 font-weight-bold text-info" align="center">Test Tracking History</h6>
                                 </div>
-                                <div class="card-body" style="height:170px;">
+                                <div class="card-body" style="height:200px;">
 <?php if($num>0){
 ?>
  <table class="table table-bordered table-sm"  width="100%" cellspacing="0">
